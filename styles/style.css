@@ -1,0 +1,125 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+}
+
+.container h1{
+    text-align: center;
+}
+
+.container .main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.container .main table{
+    box-shadow: -2px 4px 2px gray;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.container .main table img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.container .main table th, td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.container .main table tr td a {
+    text-decoration: underline;
+}
+
+.container .main table tr td a:hover, .tambah:hover{
+    color: rgba(255, 0, 0, 0.6);
+    transition: .2s all;
+}
+
+/* tambah barang */
+
+.container .main form{
+    width: 400px;
+    padding: 20px;
+    margin: auto;
+}
+
+.container .main form .input label{
+    display: block;
+    margin: 10px 0 5px 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.container .main form .input input[type="text"], .container .main form .input select{
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    
+}
+
+.container .main form .input .label{
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: azure;
+    box-shadow: -2px -2px 3px inset gray, 2px 2px 3px inset whitesmoke;
+}
+
+.container .main form .submit input[type="submit"]{
+    display: block;
+    margin: 20px auto 0 auto;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px 0;
+    box-shadow: -2px -2px 3px inset gray, 2px 2px 3px inset whitesmoke;
+    border: 1px solid black;
+} 
+
+.container .main form .submit input[type="submit"]:hover{
+    box-shadow: 0px 0px 0px inset gray, 0px 0px 0px inset gray;
+    transform: translate(0px, 3px);
+    background-color: rgb(234, 234, 234, .2);
+    cursor: pointer;
+    transition: .4ms all;
+
+}
+
+.back{
+    width: 8%;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: azure;
+    text-align: center;
+    box-shadow: -2px -2px 2px inset gray;
+}
+
+.back a i{
+    padding: 5px;
+    display: block;
+    color: black;
+    font-size: 18px;
+}
+
+.back:hover{
+    transform: translate(0, 3px);
+    box-shadow: 0px 0px 0px gray;
+}
